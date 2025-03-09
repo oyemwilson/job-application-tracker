@@ -8,11 +8,12 @@ connectDB();
 
 const app = express();
 app.use(
-    cors({
-      origin: 'http://localhost:3000',
-      // Additional options can be added here
-    })
-  );
+  cors({
+    origin: ['http://localhost:3000', 'https://job-application-tracker-1-wvga.onrender.com'],
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 app.get('/', (req, res) => {
   res.send('API is running...');

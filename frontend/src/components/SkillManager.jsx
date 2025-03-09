@@ -11,7 +11,7 @@ function SkillsManager() {
     const fetchSkills = async () => {
       try {
         const token = localStorage.getItem("token"); // Retrieve token from localStorage
-        const res = await axios.get("http://localhost:5001/api/user", {
+        const res = await axios.get("https://job-application-tracker-aazk.onrender.com//api/user", {
           headers: {
             Authorization: `Bearer ${token}`, // Add token to headers
           },
@@ -30,7 +30,7 @@ function SkillsManager() {
       try {
         const token = localStorage.getItem("token");
         const res = await axios.put(
-          "http://localhost:5001/api/user/skills",
+          "https://job-application-tracker-aazk.onrender.com//api/user/skills",
           { skills: updatedSkills },
           {
             headers: {
@@ -53,7 +53,7 @@ function SkillsManager() {
     try {
       const token = localStorage.getItem("token");
       await axios.put(
-        "http://localhost:5001/api/user/skills",
+        "https://job-application-tracker-aazk.onrender.com//api/user/skills",
         { skills: updatedSkills },
         {
           headers: {
