@@ -14,6 +14,10 @@ app.use(
     })
   );
 app.use(express.json());
+app.get('/', (req, res) => {
+  res.send('API is running...');
+});
+
 
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/applications', require('./routes/jobApplications'));
