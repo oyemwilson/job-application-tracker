@@ -1,0 +1,5 @@
+[
+    { "title": "Software Engineer", "company": "TechCorp", "skills": ["JavaScript", "React"] },
+    { "title": "Data Analyst", "company": "DataInc", "skills": ["Python", "SQL"] },
+    { "title": "Designer", "company": "Datonics", "skills": ["Figma", "Adobe", "photoshop"] }
+  ]
