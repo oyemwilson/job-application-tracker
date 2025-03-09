@@ -12,7 +12,7 @@ function Login({ setIsLoggedIn }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://job-application-tracker-aazk.onrender.com//api/auth/login', { email, password });
+      const res = await axios.post('https://job-application-tracker-aazk.onrender.com/api/auth/login', { email, password });
       console.log(res.data); // Log the response data
       localStorage.setItem('token', res.data.token);
       setIsLoggedIn(true);

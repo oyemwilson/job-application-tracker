@@ -20,7 +20,7 @@ function JobApplications() {
   const fetchApplications = async () => {
     try {
       const token = localStorage.getItem("token"); // Get token from localStorage
-      const res = await axios.get("https://job-application-tracker-aazk.onrender.com//api/applications", {
+      const res = await axios.get("https://job-application-tracker-aazk.onrender.com/api/applications", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -59,7 +59,7 @@ function JobApplications() {
     try {
       if (selectedApplication) {
         await axios.put(
-          `https://job-application-tracker-aazk.onrender.com//api/applications/${selectedApplication._id}`,
+          `https://job-application-tracker-aazk.onrender.com/api/applications/${selectedApplication._id}`,
           applicationData,
           {
             headers: {
@@ -69,7 +69,7 @@ function JobApplications() {
         );
       } else {
         await axios.post(
-          "https://job-application-tracker-aazk.onrender.com//api/applications",
+          "https://job-application-tracker-aazk.onrender.com/api/applications",
           applicationData,
           {
             headers: {
@@ -90,7 +90,7 @@ function JobApplications() {
       console.log('Deleting application with ID:', id); // Log the ID
       try {
         const token = localStorage.getItem("token"); // Get token from localStorage
-        await axios.delete(`https://job-application-tracker-aazk.onrender.com//api/applications/${id}`, {
+        await axios.delete(`https://job-application-tracker-aazk.onrender.com/api/applications/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

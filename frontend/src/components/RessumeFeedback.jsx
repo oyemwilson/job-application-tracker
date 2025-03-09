@@ -13,7 +13,7 @@ function ResumeFeedback() {
       const token = localStorage.getItem("token"); // Get token from localStorage
   
       const res = await axios.post(
-        "https://job-application-tracker-aazk.onrender.com//api/resume/feedback",
+        "https://job-application-tracker-aazk.onrender.com/api/resume/feedback",
         { resumeText },
         {
           headers: {

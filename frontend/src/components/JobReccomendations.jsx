@@ -18,7 +18,7 @@ function JobRecommendations() {
     }
   
     try {
-      const res = await axios.get('https://job-application-tracker-aazk.onrender.com//api/jobs/recommendations', {
+      const res = await axios.get('https://job-application-tracker-aazk.onrender.com/api/jobs/recommendations', {
         headers: {
           Authorization: `Bearer ${token}`, // Include the token in the request headers
         },
