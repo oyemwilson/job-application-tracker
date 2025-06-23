@@ -43,3 +43,11 @@ Go to frontend/, run npm install.
 Add "proxy": "http://localhost:5000" to package.json.
 Start: npm start.
 Access: Visit http://localhost:3000 in your browser.
+# Mock Up DATA
+[
+    { "title": "Software Engineer", "company": "TechCorp", "skills": ["JavaScript", "React"] },
+    { "title": "Data Analyst", "company": "DataInc", "skills": ["Python", "SQL"] },
+    { "title": "Designer", "company": "Datonics", "skills": ["Figma", "Adobe", "photoshop"] }
+]
+job recommendations show based on the skill in the Job mock up,
+# you can sign up or sign in with Email:Paul@example.com and password: 123456
